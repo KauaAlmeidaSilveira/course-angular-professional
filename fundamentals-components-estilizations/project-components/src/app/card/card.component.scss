@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Popins:wght@100;400;600;800;&display=swap');
+
+.card {
+
+    max-width: 350px;
+    background-color: orange;
+    border-radius: 25px;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+
+    // é do sass, é uma forma de aninhar classes
+    &__item{
+        padding: 10px;
+    }
+
+    &__plan{
+        font-size: 22px
+    }
+
+    &__price{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+}
