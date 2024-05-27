@@ -23,3 +23,7 @@
     }
 
 }
+
+::ng-deep .button-cancel .card-button-cancel {
+    background-color: yellow !important;
+}
