@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    height: 100vh; 
+    // 100% da altura da tela
+    // vh significa viewport height - Viewport é a área visível da página
+}
+
+.left-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-div {
+    flex-grow: 1;
+    // flex-grow: 1 faz com que a div cresça para ocupar o espaço restante
+    background-color: aqua;
+}
+
+.main-left-div {
+    height: 80%;
+    background-color: blueviolet;
+}
+
+.right-div {
+    width: 30%;
+    max-height: 100vh;
+    // max-height: 100vh faz com que a div não ultrapasse a altura da tela
+    background-color: red;
+}
