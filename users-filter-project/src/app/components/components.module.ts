@@ -16,7 +16,8 @@ import { PipesModule } from '../pipes/pipes.module';
     ],
     imports: [
         AngularMaterialModule,
-        FormsModule
+        FormsModule,
+        PipesModule
     ],
     exports: [
         UserDetailsComponent,
