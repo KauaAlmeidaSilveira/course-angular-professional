@@ -11,18 +11,15 @@ export class AppComponent implements OnInit{
   usersList: IUser[] = [];
   userSelected: IUser = {} as IUser;
   showUserDetails: boolean = false;
-  
+
   ngOnInit(): void {
     setTimeout(() => {
       this.usersList = UsersList;
-    }, 3000);
+    }, 1);
   }
 
   onUserSelected = (element: IUser) => {
     this.userSelected = element;
     this.showUserDetails = true;
   }
-
-
-
 }
