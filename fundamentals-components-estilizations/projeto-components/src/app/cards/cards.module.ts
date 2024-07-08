@@ -22,7 +22,7 @@ import { MatSliderModule } from '@angular/material/slider';
   ],
   exports: [
     CardComponent,
-    CardButtonComponent,
+    // CardButtonComponent,
     CardRoxoComponent,
     // CardRoxoButtonComponent
   ],
