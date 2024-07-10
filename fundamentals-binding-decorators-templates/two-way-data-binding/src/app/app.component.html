@@ -1,0 +1,19 @@
+<h1>Nome:</h1>
+
+<!-- Usando o two-way data binding -->
+<input type="text" 
+	[(ngModel)] = "name"
+	(ngModelChange)="alertChange($event)"
+/>
+
+<!-- 
+	Sem usar o two-way data binding
+	<input 
+		type="text" 
+		[ngModel]="name"
+		(ngModelChange)="handleInputChange($event)"
+	/>
+-->
+
+<h1>Nome digitado: {{ name }}</h1>
+
