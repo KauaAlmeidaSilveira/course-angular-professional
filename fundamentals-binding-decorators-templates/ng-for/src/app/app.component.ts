@@ -9,7 +9,7 @@ export class AppComponent {
 
 	personSelectedIndex: number | undefined;
 
-	listPessoas = [
+	listPeople = [
 		{
 			name: 'Kauã Almeida Silveira',
 			age: 20

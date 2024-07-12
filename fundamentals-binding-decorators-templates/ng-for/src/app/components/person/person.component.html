@@ -1,0 +1,7 @@
+<div class="item" [ngClass]="{
+        'item--odd': isOdd,
+        'item--highlighted': isSelected,
+    }" (click)="selectPerson()">
+    <p class="item__name">{{ personIndex }} - {{ personName }}</p>
+    <p class="item__age">{{ personAge }} anos</p>
+</div>

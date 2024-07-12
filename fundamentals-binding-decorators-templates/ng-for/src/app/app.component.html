@@ -1,36 +1,14 @@
-<!-- <div class="list">
-	<div class="item item--odd">
-		<p class="item__name">Kauã Almeida Silveira</p>
-		<p class="item__age">20 anos</p>
-	</div>
-	<div class="item item--highlighted">
-		<p class="item__name">Naryeli Helen Cusi Medrano</p>
-		<p class="item__age">20 anos</p>
-	</div>
-	<div class="item item--odd">
-		<p class="item__name">Leandro Souza Silveira</p>
-		<p class="item__age">43 anos</p>
-	</div>
-	<div class="item">
-		<p class="item__name">Gleice Maria Silveira</p>
-		<p class="item__age">39 anos</p>
-	</div>
-</div> -->
-
-<div class="list" 
-	*ngFor="let item of listPessoas; 
-	let i = index;
-	let isOdd = odd;
-	let isEven = even;
-	let isFirst = first;
-	let isLast = last;">
-		<div class="item" 
-		[ngClass]="{
-			'item--odd': isOdd,
-			'item--highlighted': personSelectedIndex == i,
-		}" 
-		(click)="selectPerson(i)">
-				<p class="item__name">{{i}} - {{item.name}}</p>
-				<p class="item__age">{{item.age}} anos</p>
-		</div>
+<div class="list">
+	<app-person 
+		*ngFor="
+			let person of listPeople; 
+			let i = index;
+			let isOdd = odd"
+		[personName]="person.name"
+		[personAge]="person.age"
+		[personIndex]="i"
+		[isOdd]="isOdd"
+		[isSelected]="personSelectedIndex === i"
+		(personSelected)="selectPerson($event)"
+	></app-person>
 </div>
