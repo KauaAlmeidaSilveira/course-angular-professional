@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-	clicou(input: HTMLInputElement){
-		console.log(input.value)
-
-		input.value = 'Atualizado'
-	}
 
 }

@@ -1,5 +1,13 @@
-<input type="text" #meuInput ngModel/>
+<div class="primo">
+    Primo: 
+</div>
 
-<p>Valor: {{ meuInput.value }}</p>
+<div class="pai" *ngIf="true" >
 
-<button (click)="clicou(meuInput)">Atualizar</button>
+    <input #inputPai ngModel>
+
+    <div class="filho" #filho *ngIf="true">
+        Filho: {{ inputPai.value }}
+    </div>
+
+</div>
